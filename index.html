@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="js/script.js" />
     <link rel="icon" type="image/fav.ico" href="images/fav.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
@@ -26,8 +25,14 @@
         deals.
       </p>
       <form action="#" class="form">
-        <input type="email" placeholder="Email Address" class="placeholer" />
-        <input type="submit" value=">" class="send" />
+        <input
+          type="email"
+          placeholder="Email Address"
+          class="placeholer"
+          id="email"
+        />
+        <input type="submit" value=">" id="send" />
+        <div id="resultat"></div>
       </form>
     </div>
 
@@ -37,5 +42,7 @@
         <img src="images/hero-mobile.jpg" alt="photo" class="mobileImage" />
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

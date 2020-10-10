@@ -3,6 +3,7 @@ body {
   height: 100%;
   margin: 0%;
   padding: 0%;
+  
   background-image: url(../images/bg-pattern-desktop.svg);
   background-clip: content-box;
   background-repeat: no-repeat;
@@ -35,7 +36,7 @@ body {
   grid-row-end: 4;
   display: grid;
   grid-template-rows: repeat(4, 1fr);
-  opacity: 0.7;
+  // opacity: 0.7;
 }
 .were {
   grid-row-start: 1;
@@ -86,7 +87,16 @@ input {
   border: 1px solid hsla(0, 36%, 70%, 0.7);
   padding-left: 5%;
 }
-.send {
+#email {
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
+  box-shadow: none;
+}
+#send:hover {
+  cursor: pointer;
+}
+#send {
   position: absolute;
   left: 250px;
   width: 3.9rem;
@@ -96,6 +106,13 @@ input {
   box-shadow: 0px 5px 20px 5px hsl(0, 80%, 86%);
   color: #fff;
   font-weight: 300;
+}
+#resultat {
+  position: relative;
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  left: 13%;
 }
 
 @media screen and (min-width: 376px) {
@@ -148,19 +165,32 @@ input {
     margin-left: 0%;
     line-height: 1.8rem;
   }
+  .form {
+    width: 100%;
+    position: relative;
+  }
   input {
-    width: 80%;
     position: relative;
     margin-left: 0%;
     height: 45px;
   }
-  .send {
-    position: absolute;
+  #send {
+    position: relative;
+    display: block;
     padding-bottom: 0.5%;
-    left: 550px;
+    left: 70%;
+    bottom: 32%;
     padding-left: 1%;
     font-size: 1.7rem;
     width: 5rem;
     height: 50px;
+  }
+  #resultat {
+    position: relative;
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 400;
+    top: -30%;
+    left: 5%;
   }
 }

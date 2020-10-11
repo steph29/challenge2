@@ -3,7 +3,7 @@ body {
   height: 100%;
   margin: 0%;
   padding: 0%;
-  
+
   background-image: url(../images/bg-pattern-desktop.svg);
   background-clip: content-box;
   background-repeat: no-repeat;
@@ -95,6 +95,12 @@ input {
 }
 #send:hover {
   cursor: pointer;
+}
+input:focus:valid {
+  outline: none;
+}
+input:focus:invalid {
+  outline: none;
 }
 #send {
   position: absolute;

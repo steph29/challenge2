@@ -8,6 +8,10 @@ $("#send").bind("click", function () {
     $("#resultat").text("Please provide a valid email");
     $("#resultat").css("color", "red");
     $("#email").css("border", "2px solid red");
+    $("#send").css(
+      "border",
+      "3px solid linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%))"
+    );
   }
 });
 
